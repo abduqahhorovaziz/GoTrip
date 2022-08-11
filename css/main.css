@@ -24,15 +24,11 @@ body {
 }
 
 .container-right {
-  padding-left: calc(
-    (100% - var(--container-width)) / 2 + var(--container-padding)
-  );
+  padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
 }
 
 .container-left {
-  padding-right: calc(
-    (100% - var(--container-width)) / 2 + var(--container-padding)
-  );
+  padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
 }
 
 .block {
@@ -53,6 +49,8 @@ body {
   background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%),
     #204434;
   color: #ffffff;
+
+  overflow: hidden;
 }
 
 .header a {
@@ -74,8 +72,31 @@ body {
 .header__top {
   margin-bottom: 86px;
 }
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hedaer__content {
+  position: relative;
+  z-index: 1;
   max-width: 592px;
+}
+
+.header__img {
+  position: relative;
+  flex-grow: 1;
+}
+
+.header__img img {
+  position: absolute;
+  top: -181px;
+  right: -87px;
+
+  max-width: unset;
+  width: 894px;
+  height: 940px;
 }
 
 /* NAV */
@@ -182,6 +203,7 @@ body {
   font-size: 25px;
   color: rgba(255, 255, 255, 0.5);
 }
+
 .header__btn {
   display: inline-block;
   padding: 27px 48px;
