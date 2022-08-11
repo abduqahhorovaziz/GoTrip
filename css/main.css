@@ -146,14 +146,59 @@ body {
   background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%),
     #ffffff;
   border-radius: 100px;
-  transition: color .2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 .btn:hover {
-  color: #fdfd9b;
+  color: rgb(245, 233, 127);
 }
 
 .btn:active {
+  position: relative;
+  top: 1px;
+}
+
+/* HEADER CONTENT */
+
+.header__badge {
+  margin-bottom: 7px;
+  display: inline-block;
+  padding: 11px 30px;
+  font-weight: 500;
+  font-size: 18px;
+
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+}
+
+.header__title {
+  margin-bottom: 30px;
+  font-size: 55px;
+}
+
+.header__text {
+  margin-bottom: 68px;
+  font-weight: 700;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.header__btn {
+  display: inline-block;
+  padding: 27px 48px;
+
+  background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
+  border-radius: 27px;
+
+  font-weight: 600;
+  font-size: 25px;
+  transition: color 0.2s ease-in;
+}
+
+.header__btn:hover {
+  color: rgb(245, 233, 127);
+}
+
+.header__btn:active {
   position: relative;
   top: 1px;
 }
