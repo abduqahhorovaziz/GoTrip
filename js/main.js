@@ -3,9 +3,23 @@ const owl = $('.owl-carousel');
 owl.owlCarousel({
     center: true,
     loop: true,
-    margin: 30,
+    margin: 20,
     startPosition: 1,
     items: 3,
+    responsive: {
+        850: {
+            startPosition: 1,
+            items: 3,
+        },
+        // breakpoint from 768 up
+        1000: {
+            margin: 20,
+            items: 3,
+        },
+        1200: {
+            margin: 30,
+        }
+    }
 });
 
 $('.slider__btn--prev').click(function () {
